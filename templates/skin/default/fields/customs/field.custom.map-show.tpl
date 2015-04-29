@@ -6,8 +6,9 @@
     {$aPlace.coord=$oField->getCoord($oTopic->getField($oField->getFieldId()))}
     {$aPlace.title=$oTopic->getTitle()|escape:'html'}
 
-    {*
     {$aMapPlaces[]=$aPlace}
+
+    {*
     {$aPlace.coord=array(56.75703,36.61614)}
     {$aPlace.title='test'}
     {$aMapPlaces[]=$aPlace}
