@@ -47,11 +47,10 @@
                 checkZoomRange: true
             });
             {else}
-            ymap.setCenter({json var=$aPlace.coord}, {
-                checkZoomRange: true
-            });
+            ymap.setCenter({json var=$aPlace.coord});
             {/if}
 		});
+
 	</script>
 
 	<div id="ItemMap" style="width:{$oConfig->getValue('plugin.maps.map_width')};height:{$oConfig->getValue('plugin.maps.map_height')};"></div>
