@@ -1,4 +1,4 @@
-Pligin Maps for Alto CMS 1.+
+#Pligin Maps for Alto CMS 1.+
 Allow to add maps into topics with placemarker. Supports Google maps and Yandex maps
 
 Compatible with Alto CMS v.1.0.+ and 1.1
