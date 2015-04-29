@@ -13,14 +13,16 @@
 class PluginMaps_ActionContent extends PluginMaps_Inherits_ActionContent {
 
     protected function EventEdit() {
+
         parent::EventEdit();
         $sTopicId = $this->GetParam(0);
         if (!($oTopic = $this->Topic_GetTopicById($sTopicId))) {
             return parent::EventNotFound();
         }
-        if ($this->oType && $oTopic && !isset($_REQUEST['submit_topic_publish']) && !isset($_REQUEST['submit_topic_save'])) {
 
-            foreach ($this->oType->getFields() as $oField) {
+        if ($this->oContentType && $oTopic && !isset($_REQUEST['submit_topic_publish']) && !isset($_REQUEST['submit_topic_save'])) {
+
+            foreach ($this->oContentType->getFields() as $oField) {
                 if ($oTopic->getField($oField->getFieldId())) {
                     if ($oField->getFieldType() == 'map') {
                         $sValue = $oTopic->getField($oField->getFieldId())->getValueSource();

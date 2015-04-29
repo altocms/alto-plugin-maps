@@ -21,7 +21,7 @@ $config['show_tag_map']=true;//показывать ли на странице �
 /*
  * Карта
  */
-$config['map_type']='yandex'; //yandex или google
+$config['map_type']='google'; //yandex или google
 $config['map_width']='600px';
 $config['map_height']='400px';
 $config['map_center']='55.75703,37.61614';//Москва
