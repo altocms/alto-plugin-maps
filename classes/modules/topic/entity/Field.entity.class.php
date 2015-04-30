@@ -14,14 +14,19 @@ class PluginMaps_ModuleTopic_EntityField extends PluginMaps_Inherit_ModuleTopic_
 
     public function getCoord($obj, $iIndex = null) {
 
-        $aValue = @unserialize($obj->getValue());
-        if (is_array($aValue)) {
-            if (!is_null($iIndex)) {
-                if (isset($aValue[$iIndex])) {
-                    return $aValue[$iIndex];
+        if (is_object($obj)) {
+            $sData = $obj->getValue();
+            if ($sData) {
+                $aValue = @unserialize($sData);
+                if (is_array($aValue)) {
+                    if (!is_null($iIndex)) {
+                        if (isset($aValue[$iIndex])) {
+                            return $aValue[$iIndex];
+                        }
+                    } elseif(sizeof($aValue) > 1) {
+                        return $aValue;
+                    }
                 }
-            } elseif(sizeof($aValue) > 1) {
-                return $aValue;
             }
         }
 
