@@ -14,7 +14,7 @@
             mapTypeId: google.maps.MapTypeId.ROADMAP
         };
 
-        var gmap = new google.maps.Map(document.getElementById("gmap"), myOptions);
+        var gmap = new google.maps.Map(document.getElementById("ItemMap"), myOptions);
         var bounds = new google.maps.LatLngBounds();
         var marker;
 
@@ -47,5 +47,5 @@
 
 	</script>
 
-	<div id="gmap" style="width:{$oConfig->getValue('plugin.maps.map_width')};height:{$oConfig->getValue('plugin.maps.map_height')};"></div>
+	<div id="ItemMap" style="width:{Config::Get('plugin.maps.map_width')};height:{Config::Get('plugin.maps.map_height')};"></div>
 </p>

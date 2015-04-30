@@ -18,7 +18,7 @@ class PluginMaps_ModuleTopic_EntityField extends PluginMaps_Inherit_ModuleTopic_
             $sData = $obj->getValue();
             if ($sData) {
                 $aValue = @unserialize($sData);
-                if (is_array($aValue)) {
+                if (is_array($aValue) && reset($aValue) !== '') {
                     if (!is_null($iIndex)) {
                         if (isset($aValue[$iIndex])) {
                             return $aValue[$iIndex];

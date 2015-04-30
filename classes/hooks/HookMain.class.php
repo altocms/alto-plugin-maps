@@ -20,9 +20,7 @@ class PluginMaps_HookMain extends Hook {
 
     public function addMap() {
         
-        return $this->Viewer_Fetch(
-            Plugin::GetTemplatePath(__CLASS__) . 'inject.mapli.tpl'
-        );
+        return $this->Viewer_Fetch(Plugin::GetTemplatePath(__CLASS__) . 'inject.mapli.tpl');
     }
 
     public function processFieldMap($aVars) {

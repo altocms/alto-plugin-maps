@@ -7,8 +7,8 @@
 
 $(function() {
     var myOptions = {
-        zoom: {$oConfig->getValue('plugin.maps.map_zoom')},
-        center: new google.maps.LatLng({$oConfig->getValue('plugin.maps.map_center')}),
+        zoom: {Config::Get('plugin.maps.map_zoom')},
+        center: new google.maps.LatLng({Config::Get('plugin.maps.map_center')}),
         panControl: true,
         zoomControl: true,
         scaleControl: true,

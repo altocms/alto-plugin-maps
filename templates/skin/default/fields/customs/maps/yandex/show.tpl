@@ -53,7 +53,7 @@
 
 	</script>
 
-	<div id="ItemMap" style="width:{$oConfig->getValue('plugin.maps.map_width')};height:{$oConfig->getValue('plugin.maps.map_height')};"></div>
+	<div id="ItemMap" style="width:{Config::Get('plugin.maps.map_width')};height:{Config::Get('plugin.maps.map_height')};"></div>
 
 	</div>
 </p>
