@@ -7,7 +7,7 @@
         <script type="text/javascript">
             ymaps.ready(function () {
                 var ymap = new ymaps.Map("ItemMap", {
-                    center: {json var=Config::Get('plugin.maps.map_center')},
+                    center: {json var=$aMapDefaultCenter},
                     zoom: {Config::Get('plugin.maps.map_zoom')},
                     type: "yandex#map"
                 });

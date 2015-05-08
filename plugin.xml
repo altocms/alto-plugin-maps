@@ -5,10 +5,10 @@
         <lang name="russian">Maps - Яндекс/Google карты</lang>
     </name>
     <author>
-        <lang name="default">extravert, Alto CMS Team</lang>
+        <lang name="default">extravert</lang>
     </author>
     <homepage>http://altocms.ru</homepage>
-    <version>1.1.4</version>
+    <version>1.1.5</version>
     <dirname>maps</dirname>
     <requires>
         <alto>
